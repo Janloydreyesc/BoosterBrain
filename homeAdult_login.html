@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="slider_login.css">
+
+</head>
+<body>
+    
+    <div class="mother">
+        <div class="Header">
+            <img class="Logo" src="kaJsdaj-removebg-preview.png"/>
+            <input class="search" type="search" value="Sign Up and get 50% off on your first order" ><span class="magnify">  <i class="fa-solid fa-magnifying-glass"></i></span> 
+            <a href="homeAdult_login.html"><i class="fa-solid fa-circle-user"><label>Login</label></i></a>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close">&times;</span>
+                <h1 class="log">Login</h1>
+                <form action="index.html" method="post">
+                    <div class="form-group">
+                        <label for="text">Username</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="loginBtn">Login</button>
+                    </div>
+            
+                    <div class="link">
+                        <p class="register"><a href="homeAdult.register.html">Register</a></p>
+                    </div>
+                </div>
+            </div>
+                </form>
+            </div>
+        </div>
+        <div class="Menu">
+            <img class="chld" src="childrens book.jpg">
+            <h2>SLIDER IMAGE</h2>
+            
+            <a href="index.html"><i class="fa-solid fa-house"><label>Home</label></i></a>
+        
+            <a href="about_us.html"><i class="fa-solid fa-address-card"> <label>About Us</label></i></a>
+            
+        <div class="dropdown">
+            <a class="Link" href="Kids_Section_3d.html">
+                <i class="fa-solid fa-shop"><Label>Shop Now!</Label></i>
+            </a>
+           
+        </div>
+        <div class="dropdown">
+        <i class="fa-solid fa-list"><label>Category</label></i>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="index.html">KIDS SECTION <br>[7-12]</a></li>
+                <li><a href="SliderYouth.html">TEEN AND YOUTH SECTION <br>[13-25]</a></li>
+                <li><a href="SliderAdult.html">ADULT AND SENIOR SECTION <br> [26-60]</a></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        
+        <div class="body"> 
+            <div class="left-design">
+                <h3>Enhance Your Memory</h3>
+                <p>Discover vitamins and supplements that help nurture children's growth and mental skills.</p>
+                <img src="little-boy-and-girl-study-read-book-silhouette-sti-1581552553.5377629.png" alt="Learning Icon" class="design-icon">
+            </div>
+            <div class="slider-frame">
+                <div class="slide-img">
+                    
+        <img src="adultv1.png" alt="Image 1">
+        <img src="adultv2.png" alt="Image 2">
+        <img src="adultv3.png" alt="Image 3">
+        <img src="adultv4.png" alt="Image 4">
+        <img src="adultv5.png" alt="Image 5">
+        <img src="adultv6.png" alt="Image 6">
+        <img src="adultv7.png" alt="Image 7">
+        <img src="adultv8.png" alt="Image 8">
+        <img src="adultv9.png" alt="Image 9">
+        <img src="adultv10.png" alt="Image 10">
+        </div>
+            </div>
+            </div>
+        <div class="footer">
+            <h5>© 2024 BrainBooster. All Rights Reserved .
+            </h5>
+        </div>
+    </div>
+    <script>
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const modal = document.getElementById("myModal");
+
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        closeModalBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
